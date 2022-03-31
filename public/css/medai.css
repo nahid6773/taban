@@ -1,0 +1,457 @@
+@media (max-width: 575.98px) { 
+    /* navbars */
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        position: absolute;
+        margin-top: 20%;
+        margin-right: 10%;
+    }
+    .navbars{
+        background: aliceblue;
+        }
+    .close-btn{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .client-page .container-content{
+        width: 394px;
+    }
+    .login-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+    }
+    .shap-nav{
+        display: none;
+    }
+    .register-icon,.login-icon,.line2{
+        font-size: 25px;
+        display: block;
+    }
+    .login,.register,.line1{
+        display: none;
+    }
+    .section-nav{
+        display: flex;
+        flex-wrap: wrap;  
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        row-gap: 2rem;
+    }
+    .container-logo{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container-suport{
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    /* end-navbar */
+
+    .search-title{
+        width: 35%;
+        margin-left: 29%;
+        font-size: 10px;
+    }
+    .search-btngroup{
+        width: 35%;
+    
+    }
+    .search-kon{
+        width: 45%;
+        margin-left: 16%;
+    }
+    
+.btn-select{
+    width: 130px;
+    height: 35px;
+    background-color: #125EAA;
+    color: #e7ecee;
+    font-family: IRANsans;
+    border-color: #707070;
+}
+.continer-content{
+    display: flex;
+    /* height: 0px; */
+   
+}
+.content-left{
+    width: 90%;
+    height: 519px;
+
+}
+.content-right{
+    width: 90%;
+    background-color: #E5E5E5;
+    height: 100%;
+    
+}
+.hotel-item{
+    width: 90%;
+    margin-top: 13%;
+}
+.input-email{
+    width: 280px;
+    font-size: 15px;
+}
+.title-footer{
+    font-size: 20px;
+    margin-bottom: 12%;
+}
+.step-container{
+    row-gap: 3rem;
+}
+.stap-item{
+    width: 90%;
+}
+.text-subfooter{
+    width: 100%;
+    font-size: 13px;
+}
+.icon-footer{
+    width: 100%;
+    justify-content: center;
+}
+.icon-footer-item{
+    font-size: 26px;
+}
+ }
+
+ /* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+     
+   /* navbars */
+   
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        position: absolute;
+        margin-top: 20%;
+        margin-right: 10%;
+    }
+    .navbars{
+        background: aliceblue;
+        }
+    .close-btn{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .login-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+            }
+            .shap-nav{
+                display: none;
+            }
+            .register-icon,.login-icon,.line2{
+                font-size: 25px;
+                display: block;
+            }
+            .login,.register,.line1{
+                display: none;
+            }
+    .section-nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        row-gap: 2rem;
+        margin-bottom: 20px;
+    }
+    .container-logo{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container-suport{
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    /* end-navbar */
+.search-container {
+    height: 107px;
+}
+.searchbars{
+    height: 107px;
+}
+    .search-title{
+        width: 35%;
+        margin-left: 25%;
+        font-size: 14px;
+    }
+    .search-btngroup{
+        width: 35%;
+    
+    }
+    .search-kon{
+        width: 45%;
+        margin-left: 16%;
+    }
+    
+.btn-select{
+    width: 164px;
+    height: 35px;
+    background-color: #125EAA;
+    color: #e7ecee;
+    font-family: IRANsans;
+    border-color: #707070;
+}
+.continer-content{
+    display: flex;
+   
+}
+.content-left{
+    width: 90%;
+    height: 100%;
+
+}
+.content-right{
+    width: 90%;
+    background-color: #E5E5E5;
+    height: 100%;
+    
+}
+.hotel-item{
+    width: 90%;
+    margin-top: 13%;
+}
+.input-email{
+    width: 280px;
+    font-size: 15px;
+}
+.title-footer{
+    font-size: 20px;
+    margin-bottom: 12%;
+}
+.step-container{
+  row-gap: 3rem;
+}
+.stap-item{
+    width: 80%;
+}
+.text-footer{
+    left: 24%;
+}
+.text-subfooter{
+    width: 100%;
+    font-size: 17px;
+}
+.icon-footer{
+    width: 100%;
+    justify-content: center;
+}
+.icon-footer-item{
+    font-size: 26px;
+}
+  }
+
+  /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+       /* navbars */
+   
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        position: absolute;
+        margin-top: 20%;
+        margin-right: 10%;
+    }
+    .navbars{
+    background: aliceblue;
+    /* width: 50%; */
+    }
+    .close-btn{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .shap-nav{
+        display: none;
+    }
+    .section-nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        row-gap: 2rem;
+        margin-bottom: 20px;
+
+    }
+    .container-logo{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container-suport{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    /* end-navbar */
+.search-container {
+    height: 107px;
+}
+.searchbars{
+    height: 107px;
+}
+    .search-title{
+        width: 35%;
+        margin-left: 15%;
+        font-size: 17px;
+    }
+    .search-btngroup{
+        width: 35%;
+        margin-left: 7%;
+    }
+    .search-kon{
+        width: 45%;
+        margin-left: 16%;
+    }
+    
+.btn-select{
+    width: 164px;
+    height: 35px;
+    background-color: #125EAA;
+    color: #e7ecee;
+    font-family: IRANsans;
+    border-color: #707070;
+}
+.continer-content{
+    display: flex;
+   
+}
+.content-left{
+    width: 45%;
+    height: 100%;
+
+}
+.content-right{
+    width: 45%;
+    background-color: #E5E5E5;
+    height: 100%;
+    
+}
+.hotel-item{
+    width: 47%;
+    margin-top: 13%;
+}
+.input-email{
+    width: 300px;
+    font-size: 15px;
+}
+.title-footer{
+    font-size: 20px;
+    margin-bottom: 12%;
+}
+.step-container{
+  row-gap: 3rem;
+}
+.stap-item{
+    width: 45%;
+}
+.text-footer{
+    left: 24%;
+}
+.text-subfooter{
+    width: 100%;
+    font-size: 17px;
+}
+.icon-footer{
+    width: 100%;
+    justify-content: center;
+}
+.icon-footer-item{
+    font-size: 26px;
+}
+.register-icon,.login-icon,.line2{
+    display: none;
+    }
+
+   }
+
+   /* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+
+   @media (min-width: 992px) and (max-width: 1199.98px) { 
+.container-suport{
+    width: 34%;
+}
+   .nav-item{
+       font-size: 13px;
+   }
+   .searchbars{
+       width: 85%;
+   }
+   .btn-select{
+       width: 186px;
+   }
+   .suport-number{
+       font-size: 13px;
+   }
+  .navbars{
+    font-size: 13px;
+  }
+  .btn-offer{
+      font-size: 12px;
+      width: 114px;
+  }
+ }
+ @media (min-width:1000.98px) {
+    .register-icon,.login-icon,.line2{
+        display: none;
+        }
+ }
