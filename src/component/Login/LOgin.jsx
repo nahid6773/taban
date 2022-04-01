@@ -2,12 +2,16 @@ import React, { Fragment, useRef, useState } from 'react';
 import SimpleReactValidator from 'simple-react-validator';
 import { toast } from 'react-toastify';
 import { userlogin } from '../../services/userservice';
+import { Helmet } from 'react-helmet';
+import {useNavigate} from 'react-router-dom'
 
 
 const Login = () => {
+const navigate=useNavigate();
+
     const validator = useRef(new SimpleReactValidator({
         messages: {
-            required: "لطفا اسمتو وارد کن",
+            required: " مقداری وارد کنید",
             email: "ایمیل وارد شده صحیح نیس",
             min: "کاراکتر وارد شده کمتر از 5تا نباشه"
         },
@@ -16,7 +20,8 @@ const Login = () => {
 
     const [email, setemail] = useState();
     const [password, setpassword] = useState();
-    const [,forceUpdate]=useState();
+    const [, forceUpdate] = useState();
+    const [islogin,setlogin]=useState();
 
     const reset = () => {
         setemail("");
@@ -32,21 +37,22 @@ const Login = () => {
             password
         }
         try {
-            if(validator.current.allValid()){
+            if (validator.current.allValid()) {
                 const { status, data } = await userlogin(user);
                 if (status === 200) {
                     toast.success("وارد سایت شدید", {
                         position: "top-right",
-                        closeOnClick:true
-                    }) 
+                        closeOnClick: true
+                    })
                     reset();
+               navigate("/",{replace:true});
                 }
                 console.log(data);
-            }else{
+            } else {
                 validator.current.showMessages();
                 forceUpdate(1);
             }
-          
+
         }
         catch (ex) {
             toast.error("کاربر واردنشد", {
@@ -59,15 +65,18 @@ const Login = () => {
     return (
         <Fragment>
             <main className="client-page">
+            <Helmet>
+                <title>ورود به سایت/فی‌باتو</title>
+            </Helmet>
+
                 <div className="container-content">
                     <header>
                         <h2> ورود به سایت </h2>
                     </header>
-
                     <div className="form-layer">
                         <form onSubmit={handelsubmit}>
                             <div className="input-group">
-                            {validator.current.message("email", email, "required|email")}
+                                {validator.current.message("email", email, "required|email")}
                                 <input
                                     type="text"
                                     name="email"
@@ -75,7 +84,7 @@ const Login = () => {
                                     placeholder="ایمیل"
                                     aria-describedby="email-address"
                                     value={email}
-                                    onChange={e =>{
+                                    onChange={e => {
                                         setemail(e.target.value)
                                         validator.current.showMessageFor("email")
                                     }}
@@ -86,7 +95,6 @@ const Login = () => {
                                 >
                                     <i classNmae="fa fa-paper-plane" aria-hidden="true"></i>
                                 </span>
-
                             </div>
                             <div className="input-group">
                                 {validator.current.message("password", password, "required|min:5")}
@@ -97,18 +105,16 @@ const Login = () => {
                                     placeholder="رمز عبور "
                                     aria-describedby="password"
                                     value={password}
-                                    onChange={e =>{
+                                    onChange={e => {
                                         setpassword(e.target.value)
                                         validator.current.showMessageFor("password")
                                     }}
                                 />
                                 <span className="input-group-addon" id="password">
-                                    {/* <i className="zmdi zmdi-lock"></i> */}
                                     <i className="fa fa-key" aria-hidden="true"></i>
                                 </span>
 
                             </div>
-                            {/* یکم برنامه های باز رو ببند انق */}
 
                             <div className="remember-me">
                                 <label>

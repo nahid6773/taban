@@ -19,9 +19,13 @@ axios.interceptors.response.use(null,error=>{
 
     return Promise.reject(error);
 })
-export default{
+const axiosMethods = {
     get:axios.get,
     post:axios.post,
     put:axios.put,
     delete:axios.delete
 }
+
+export default axiosMethods
+
+// جاهایی که از این استفاده کردی و درست کن از این اسم استفاده نکردم بکن

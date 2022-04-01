@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Helmet } from 'react-helmet';
 import {NavLink} from 'react-router-dom'
 
 const Hotels = () => {
@@ -7,6 +8,9 @@ const Hotels = () => {
             
             {/* <!-- offers --> */}
     <div className="offer-title">
+        <Helmet>
+            <title>فی‌باتو</title>
+        </Helmet>
         <p>مناقصه های در حال برگزاری</p>
 
         <NavLink to="/allhotels" className="allhotels">مشاهده همه مناقصه ها</NavLink>

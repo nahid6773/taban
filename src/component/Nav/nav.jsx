@@ -66,7 +66,7 @@ class Nav extends Component {
                 </div>
 
                 <li className="mx-2">
-                  <a href="#">صفحه اصلی</a>
+                  <NavLink to="/">صفحه اصلی</NavLink>
                 </li>
                 <li className="mx-2">
                   <a href="#">شرکت  در یک مناقصه</a>

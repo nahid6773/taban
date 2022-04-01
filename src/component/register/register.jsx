@@ -2,9 +2,14 @@ import React, { Fragment, useRef, useState } from 'react'
 import simplereactvalidator from 'simple-react-validator'
 import { toast } from 'react-toastify';
 import { userregister } from '../../services/userservice';
+import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
+
+    const navigate=useNavigate();
+
     const validator = useRef(new simplereactvalidator({
         messages: {
             required: "لطفا  اسمتو وارد کن",
@@ -49,6 +54,7 @@ const Register = () => {
                     closeOnClick: "true"
                 })
                 reset();
+                navigate("/login",{replace:true});
             }
 
         }
@@ -68,7 +74,11 @@ const Register = () => {
         <Fragment>
             <main className="client-page">
                 <div className="container-content">
+
                     <header>
+                <Helmet>
+                    <title>عضویت در سایت/فی‌باتو</title>
+                </Helmet>
                         <h2> عضویت در سایت </h2>
                     </header>
 
